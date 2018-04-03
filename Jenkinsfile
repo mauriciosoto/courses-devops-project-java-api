@@ -2,11 +2,11 @@ node {
     stage 'Checkout'
     checkout scm
 
-    stage 'Compile'
+    stage 'Compilar'
     sh "./gradlew compileJava"
 
-    stage 'Test'
-    sh "./gradlew test"
+    // stage 'Test'
+    //sh "./gradlew test"
 
     stage 'Build'
     sh "./gradlew build"
